@@ -20,12 +20,15 @@ if not isinstance(groups, list) or not groups:
 
 problems = []
 for i, group in enumerate(groups, 1):
-    name = f"Group {i}" + (f" ({group.get('label')})" if isinstance(group, dict) and group.get("label") else "")
+    title = isinstance(group, dict) and (group.get("label") or group.get("section"))
+    name = f"Group {i}" + (f" ({title})" if title else "")
     if not isinstance(group, dict):
         problems.append(f"{name} isn't an entry in {{ }}.")
         continue
-    if not isinstance(group.get("label"), str) or not group["label"].strip():
-        problems.append(f"{name}: label is missing.")
+    if not any(isinstance(group.get(k), str) and group[k].strip() for k in ("label", "section")):
+        problems.append(f"{name}: needs a label or a section.")
+    if group.get("column", 1) not in (1, 2):
+        problems.append(f"{name}: column should be 1 or 2.")
     paper = group.get("paper")
     if paper is not None and not (isinstance(paper, dict) and paper.get("doi") and paper.get("journal")):
         problems.append(f"{name}: paper needs a doi and a journal.")
