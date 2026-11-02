@@ -1,0 +1,38 @@
+{
+  "asOf": "November 2, 2026",
+  "scholarUrl": "https://scholar.google.com/citations?user=EVIHrc4AAAAJ&hl=en",
+  "altmetricUrl": "https://www.altmetric.com/explorer/highlights?researcher_id%5B%5D=ur.015772061677.94",
+  "citations": 989,
+  "h": 9,
+  "i10": 9,
+  "news": 1049,
+  "altmetric": 7593,
+  "attentionPapers": 13,
+  "byYear": [
+    {
+      "year": 2021,
+      "cites": 3
+    },
+    {
+      "year": 2022,
+      "cites": 13
+    },
+    {
+      "year": 2023,
+      "cites": 75
+    },
+    {
+      "year": 2024,
+      "cites": 170
+    },
+    {
+      "year": 2025,
+      "cites": 270
+    },
+    {
+      "year": 2026,
+      "cites": 338
+    }
+  ],
+  "currentYear": 2026
+}
