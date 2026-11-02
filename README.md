@@ -27,4 +27,4 @@ Add it to a group's `stories` in `news.json`, with `outlet`, `title`, `date` (`"
 
 Publish it the same two ways as a conference. `check_news.py` checks the file first.
 
-Each Monday, `news_watch.py` compares Altmetric's news mentions of the papers with the ones it has seen (`job/news-seen.json`). When a well-known outlet covers a paper, or a paper gets its first story, it lists the story in the log and sends a Mac notification. It never changes `news.json`.
+Each Monday, `news_watch.py` compares Altmetric's news mentions of the papers with the ones it has seen (`job/news-seen.json`). When a well-known English-language outlet covers a paper, or a paper gets its first story, it lists the story in the log and sends a Mac notification. It never changes `news.json`.

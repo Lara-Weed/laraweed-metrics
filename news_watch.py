@@ -21,7 +21,7 @@ SEEN_PATH = os.path.join(REPO, "job", "news-seen.json")
 CRED_PATH = os.path.expanduser("~/.config/presence-tracker/altmetric.json")
 DEFAULT_RESEARCHER = "ur.015772061677.94"
 
-# Outlets worth a look, matched case-insensitively against Altmetric's outlet names
+# English-language outlets worth a look, matched case-insensitively against Altmetric's outlet names
 NOTABLE = {
     "washington post", "the new york times", "new york times", "the wall street journal", "wall street journal",
     "the guardian", "bbc news", "cnn news", "npr", "time magazine", "newsweek", "the atlantic", "the economist",
@@ -30,8 +30,8 @@ NOTABLE = {
     "wired", "stat", "scientific american", "science", "nature", "new scientist", "national geographic",
     "popular science", "discover magazine", "smithsonian magazine", "the conversation", "forbes", "healthline",
     "medical news today", "verywell health", "everyday health", "aarp", "prevention", "men's health",
-    "women's health", "psychology today", "deutsche welle", "tagesschau", "spektrum", "el país", "le monde",
-    "the globe and mail", "ici.radio-canada.ca", "sydney morning herald", "the irish times", "the independent",
+    "women's health", "psychology today", "the globe and mail", "sydney morning herald", "the irish times",
+    "the independent",
 }
 
 
@@ -88,6 +88,11 @@ def her_papers():
     return papers
 
 
+def latin_script(title):
+    # Some outlets share one name across editions (Women's Health Japan), so skip headlines in other scripts
+    return not any(c.isalpha() and ord(c) > 0x24F for c in title)
+
+
 def notify(message):
     subprocess.run(["osascript", "-e", "on run argv", "-e",
                     'display notification (item 1 of argv) with title "New press coverage"', "-e", "end run", message],
@@ -110,7 +115,7 @@ def main():
         if not mine:
             continue
         first_story = [p for p in mine if p not in covered]
-        if m["outlet"].lower() in NOTABLE or first_story:
+        if (m["outlet"].lower() in NOTABLE and latin_script(m["title"])) or first_story:
             worth.append((m, papers[mine[0]], bool(first_story)))
         covered.update(mine)
 
