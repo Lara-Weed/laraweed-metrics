@@ -5,11 +5,11 @@
       "paper": { "doi": "10.1073/pnas.2508293122", "authors": "Weed & Zeitzer", "journal": "PNAS", "year": 2025 },
       "stories": [
         { "outlet": "TODAY", "title": "Sleep Experts Are ‘Very Concerned’ By New Bill Making Daylight Saving Permanent", "date": "2026-07-16", "url": "https://www.today.com/health/sleep/permanent-daylight-saving-time-bill-health-experts-react-rcna587663" },
-        { "outlet": "TODAY", "title": "Do We Still Need Daylight Saving Time? New Research Shows Negative Health Impacts", "date": "2025-10-31", "url": "https://www.today.com/health/news/do-we-need-daylight-saving-time-rcna241065" },
-        { "outlet": "Tagesschau", "title": "Leben wir in der falschen Zeitzone?", "date": "2025-10-25", "url": "https://www.tagesschau.de/wissen/zeitumstellung-einfluss-gesundheit-100.html" },
         { "outlet": "Scientific American", "title": "Nixing Daylight Saving Time May Lower Risk of Obesity and Stroke", "date": "2025-09-15", "url": "https://www.scientificamerican.com/article/nixing-daylight-saving-time-may-lower-risk-of-obesity-and-stroke/" },
         { "outlet": "Washington Post", "title": "Hate the time change? New evidence says it could even harm your health.", "date": "2025-09-15", "url": "https://www.washingtonpost.com/health/2025/09/15/daylight-savings-clock-obesity-stroke/" },
+        { "outlet": "TODAY", "title": "Do We Still Need Daylight Saving Time? New Research Shows Negative Health Impacts", "date": "2025-10-31", "url": "https://www.today.com/health/news/do-we-need-daylight-saving-time-rcna241065" },
         { "outlet": "Newsweek", "title": "Daylight Savings Time: Most Americans Would be Healthier Without Switch", "date": "2025-09-15", "url": "https://www.newsweek.com/daylight-saving-time-americans-health-clock-change-2128349" },
+        { "outlet": "Tagesschau", "title": "Leben wir in der falschen Zeitzone?", "date": "2025-10-25", "url": "https://www.tagesschau.de/wissen/zeitumstellung-einfluss-gesundheit-100.html" },
         { "outlet": "Stanford Medicine", "title": "Most people would be healthier without daylight saving time, study says", "date": "2025-09", "url": "https://stanmed.stanford.edu/no-daylight-saving-time-healthier/" }
       ]
     },

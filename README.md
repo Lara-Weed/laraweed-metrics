@@ -23,7 +23,7 @@ Copy an entry in `conferences.json`, paste it first in the list and edit it. The
 
 ## Adding a press story
 
-Add it to a group's `stories` in `news.json`, with `outlet`, `title`, `date` (`"2026-07-16"` or `"2026-07"`) and `url`. Optionally add `when` to show a label such as `"Winter 2026"` instead of the date. The website shows each group's stories newest first, three at a time, and adds "and N more stories" from Altmetric for groups tied to a paper. Groups appear in the order they're listed. A `section` value prints a small heading, such as "Co-authored studies", before that group.
+Add it to a group's `stories` in `news.json`, with `outlet`, `title`, `date` (`"2026-07-16"` or `"2026-07"`) and `url`. Optionally add `when` to show a label such as `"Winter 2026"` instead of the date. The website shows each group's stories in the order listed, so put the ones you most want seen first. It shows three, with the rest behind Show more, and adds "and N more stories" from Altmetric for groups tied to a paper. Groups appear in the order they're listed. A `section` value prints a small heading, such as "Co-authored studies", before that group.
 
 Publish it the same two ways as a conference. `check_news.py` checks the file first.
 
