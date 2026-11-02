@@ -1,13 +1,14 @@
 #!/bin/bash
 # Weekly: refresh citation and attention numbers, rebuild impact.json and publish it to GitHub Pages.
 # Run by ~/Library/LaunchAgents/com.laraweed.metrics.plist; output goes to ~/Library/Logs/laraweed-metrics.log.
+# Works from ./job, a copy kept outside OneDrive (which background jobs can't read); refresh it with sync_job.sh.
 set -euo pipefail
-FOLDER="/Users/lara/Library/CloudStorage/OneDrive-Stanford/Scientific Visibility"
 REPO="$HOME/laraweed-metrics"
+JOB="$REPO/job"
 echo "=== $(date '+%Y-%m-%d %H:%M') ==="
-cd "$FOLDER"
+cd "$JOB"
 /usr/bin/python3 -I refresh_metrics.py
-/usr/bin/python3 -I brand-assets/source/build_pub_stats.py "$FOLDER" "$REPO/impact.json"
+/usr/bin/python3 -I build_pub_stats.py "$JOB" "$REPO/impact.json"
 cd "$REPO"
 if git diff --quiet -- impact.json; then
   echo "No change in the numbers."
