@@ -11,6 +11,44 @@
   "news": 1049,
   "altmetric": 7593,
   "attentionPapers": 13,
+  "newsByDoi": {
+    "10.1016/j.xcrm.2022.100895": {
+      "news": 515,
+      "url": "https://www.altmetric.com/details/141048972"
+    },
+    "10.1073/pnas.2508293122": {
+      "news": 367,
+      "url": "https://www.altmetric.com/details/181431210"
+    },
+    "10.1016/j.psychres.2024.115956": {
+      "news": 159,
+      "url": "https://www.altmetric.com/details/163945260"
+    },
+    "10.1186/s13195-024-01411-0": {
+      "news": 1,
+      "url": "https://www.altmetric.com/details/159595710"
+    },
+    "10.1152/physrev.00049.2024": {
+      "news": 2,
+      "url": "https://www.altmetric.com/details/186910715"
+    },
+    "10.1038/s44294-026-00151-w": {
+      "news": 2,
+      "url": "https://www.altmetric.com/details/198425243"
+    },
+    "10.1016/j.ejim.2024.12.031": {
+      "news": 1,
+      "url": "https://www.altmetric.com/details/172622219"
+    },
+    "10.1177/07487304251392289": {
+      "news": 1,
+      "url": "https://www.altmetric.com/details/185467880"
+    },
+    "10.3390/s21175806": {
+      "news": 1,
+      "url": "https://www.altmetric.com/details/112526102"
+    }
+  },
   "byYear": [
     {
       "year": 2021,
