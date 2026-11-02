@@ -1,0 +1,47 @@
+{
+  "groups": [
+    {
+      "label": "Time policy and circadian health",
+      "paper": { "doi": "10.1073/pnas.2508293122", "authors": "Weed & Zeitzer", "journal": "PNAS", "year": 2025 },
+      "stories": [
+        { "outlet": "TODAY", "title": "Sleep Experts Are ‘Very Concerned’ By New Bill Making Daylight Saving Permanent", "date": "2026-07-16", "url": "https://www.today.com/health/sleep/permanent-daylight-saving-time-bill-health-experts-react-rcna587663" },
+        { "outlet": "TODAY", "title": "Do We Still Need Daylight Saving Time? New Research Shows Negative Health Impacts", "date": "2025-10-31", "url": "https://www.today.com/health/news/do-we-need-daylight-saving-time-rcna241065" },
+        { "outlet": "Tagesschau", "title": "Leben wir in der falschen Zeitzone?", "date": "2025-10-25", "url": "https://www.tagesschau.de/wissen/zeitumstellung-einfluss-gesundheit-100.html" },
+        { "outlet": "Scientific American", "title": "Nixing Daylight Saving Time May Lower Risk of Obesity and Stroke", "date": "2025-09-15", "url": "https://www.scientificamerican.com/article/nixing-daylight-saving-time-may-lower-risk-of-obesity-and-stroke/" },
+        { "outlet": "Washington Post", "title": "Hate the time change? New evidence says it could even harm your health.", "date": "2025-09-15", "url": "https://www.washingtonpost.com/health/2025/09/15/daylight-savings-clock-obesity-stroke/" },
+        { "outlet": "Newsweek", "title": "Daylight Savings Time: Most Americans Would be Healthier Without Switch", "date": "2025-09-15", "url": "https://www.newsweek.com/daylight-saving-time-americans-health-clock-change-2128349" },
+        { "outlet": "Stanford Medicine", "title": "Most people would be healthier without daylight saving time, study says", "date": "2025-09", "url": "https://stanmed.stanford.edu/no-daylight-saving-time-healthier/" }
+      ]
+    },
+    {
+      "label": "Features",
+      "stories": [
+        { "outlet": "Stanford Magazine", "title": "Power Transfer", "date": "2026-01", "when": "Winter 2026", "url": "https://stanfordmag.org/contents/power-transfer" },
+        { "outlet": "Stanford Engineering", "title": "Spotlight: Lara Weed", "date": "2024-04", "url": "https://engineering.stanford.edu/spotlight/lara-weed" }
+      ]
+    },
+    {
+      "section": "Co-authored studies",
+      "label": "Late bedtimes and mental health",
+      "paper": { "doi": "10.1016/j.psychres.2024.115956", "authors": "Lok, Weed, Winer & Zeitzer", "journal": "Psychiatry Research", "year": 2024 },
+      "stories": [
+        { "outlet": "AARP", "title": "Better to Be a Night Owl or an Early Bird?", "date": "2026-02-26", "url": "https://www.aarp.org/health/healthy-living/night-owl-vs-early-bird-health/" },
+        { "outlet": "Fox News", "title": "Going to bed after this time could lead to poorer mental health, a Stanford study finds", "date": "2024-06-21", "url": "https://www.foxnews.com/health/going-bed-after-time-could-lead-poorer-mental-health-stanford-study-finds" }
+      ]
+    },
+    {
+      "label": "Late sleep and physical health",
+      "paper": { "doi": "10.1016/j.ejim.2024.12.031", "authors": "Lok, Weed, Winer & Zeitzer", "journal": "European Journal of Internal Medicine", "year": 2025 },
+      "stories": [
+        { "outlet": "TODAY", "title": "The Ideal Schedule for Eating, Sleeping and Exercise for Your Internal Clock and Heart Health", "date": "2025-10-29", "url": "https://www.today.com/health/health/best-time-eat-sleep-exercise-according-experts-rcna240470" }
+      ]
+    },
+    {
+      "label": "Breathwork, mood and stress",
+      "paper": { "doi": "10.1016/j.xcrm.2022.100895", "authors": "Balban et al.", "journal": "Cell Reports Medicine", "year": 2023 },
+      "stories": [
+        { "outlet": "Washington Post", "title": "5 breathing exercises that actually help you feel calmer", "date": "2026-08-06", "url": "https://www.washingtonpost.com/wellness/2026/08/06/5-breathing-exercises-help-you-feel-calmer/" }
+      ]
+    }
+  ]
+}
