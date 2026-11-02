@@ -1,0 +1,138 @@
+[
+  {
+    "year": 2025,
+    "title": "Timing matters: Nocturnal declines in muscle strength and functional performance in women",
+    "authors": "Weed L, Nguyen B, Thompson S, Gurchiek R, Lok R, Stefanick M, Kraus E, Delp S, Zeitzer J",
+    "meeting": "FARM 2025",
+    "place": "Stanford, CA",
+    "format": "Oral"
+  },
+  {
+    "year": 2024,
+    "title": "Remote Monitoring of Spatiotemporal Gait Parameters Across the Menstrual Cycle: Impact of Time of Day and Sleep Pressure",
+    "authors": "Weed L, Nguyen B, Thompson S, Gurchiek R, Lok R, Stefanick M, Kraus E, Delp S, Zeitzer J",
+    "meeting": "ASB 2024",
+    "place": "Madison, WI",
+    "format": "Oral"
+  },
+  {
+    "year": 2024,
+    "title": "Impact of Time of Day on Neuromuscular Performance of the Star Excursion Balance Test in Young Women",
+    "authors": "Weed L, Thompson S, Kraus E, Delp S, Zeitzer J",
+    "meeting": "ACSM 2024",
+    "place": "Boston, MA",
+    "format": ""
+  },
+  {
+    "year": 2022,
+    "title": "Advancements in Predicting Circadian Rhythms from Wrist-Worn Wearable Sensors",
+    "authors": "Weed L, Zeitzer JM",
+    "meeting": "MHSRS 2022",
+    "place": "Kissimmee, FL",
+    "format": "Poster"
+  },
+  {
+    "year": 2022,
+    "title": "Sleep-wake stability and variability in the middle-aged adult population: a UK Biobank study",
+    "authors": "Lok R, Weed L, Chawra D, Winer J, Zeitzer J",
+    "meeting": "SLEEP 2022",
+    "place": "Charlotte, NC",
+    "format": ""
+  },
+  {
+    "year": 2022,
+    "title": "Predicting Circadian Rhythms from Wrist-Worn Wearable Sensors",
+    "authors": "Weed L, Zeitzer JM",
+    "meeting": "SRBR 2022",
+    "place": "Amelia Island, FL",
+    "format": "Poster"
+  },
+  {
+    "year": 2020,
+    "title": "Sleep Detection and Disturbance Characterization from Chest Accelerometer for Multiple Sclerosis",
+    "authors": "Weed L, Gurchiek R, Tulipani L, Meyer B, Allen D, Ursiny A, Solomon A, McGinnis R",
+    "meeting": "BMES 2020",
+    "place": "San Diego, CA",
+    "format": "Oral"
+  },
+  {
+    "year": 2020,
+    "title": "Implementing High Intensity Gait Training to Improve Recovery Following Stroke Using Knowledge Translation",
+    "authors": "Robinson JR, Goodwin LB, Fulk GD, Borland R, McGinnis RS, Weed L",
+    "meeting": "APTA CSM 2020",
+    "place": "Denver, CO",
+    "format": "Poster"
+  },
+  {
+    "year": 2019,
+    "title": "Pedestrian Movement Tracking Using Adaptive Zero-Velocity Updates from Shank IMU",
+    "authors": "Weed L, Fellin RE, Davis SK, Buller MJ",
+    "meeting": "ASB/ISB 2019",
+    "place": "Calgary, Canada",
+    "format": "Oral"
+  },
+  {
+    "year": 2019,
+    "title": "Characterizing Marching Gait Parameters in the Field During Load Carriage Using a Shank-Borne Sensor",
+    "authors": "Fellin RE, Weed L, Davis SK, Welles AP, Seay JF, Buller MJ",
+    "meeting": "ASB/ISB 2019",
+    "place": "Calgary, Canada",
+    "format": "Oral"
+  },
+  {
+    "year": 2019,
+    "title": "Comparison of Raw Accelerometry from Four Research-Grade Devices",
+    "authors": "Williamson JR, Bobrow J, Weed L, Claypool KT, Telfer BA, Friedl KE",
+    "meeting": "ICAMPAM 2019",
+    "place": "Maastricht, Netherlands",
+    "format": "Poster"
+  },
+  {
+    "year": 2019,
+    "title": "Wearable Sensor-Based Characterization of Gait Biomechanics in Persons with Multiple Sclerosis: Comparing In-Lab and Daily Life Observations",
+    "authors": "Gurchiek R, Adamowicz L, Tulipani L, Weed L, Solomon AJ, McGinnis RS",
+    "meeting": "ACTRIMS 2019",
+    "place": "Dallas, TX",
+    "format": "Poster"
+  },
+  {
+    "year": 2019,
+    "title": "Transitioning Assessments from the Clinic to Daily Life: Exploring Sit-to-Stand Transition Rates as a Means for Assessing Symptom Fluctuation",
+    "authors": "Tulipani L, Adamowicz L, Gurchiek R, Weed L, Warren HR, Solomon AJ, McGinnis RS",
+    "meeting": "ACTRIMS 2019",
+    "place": "Dallas, TX",
+    "format": "Poster"
+  },
+  {
+    "year": 2018,
+    "title": "Effect of EMS Loading Configuration on Stair Ascent and Descent Biomechanics Using a Kalman Filter and Wearable Inertial Sensors",
+    "authors": "Weed L, Petrillo C, Adamowicz L, McGinnis RS",
+    "meeting": "BMES 2018",
+    "place": "Atlanta, GA",
+    "format": "Oral"
+  },
+  {
+    "year": 2018,
+    "title": "Open-Source Wearable Sensor Based Method Feasible for Tracking Steps in Patients Recovering from Stroke",
+    "authors": "Weed L, Robinson J, Goodwin L, McGinnis RS",
+    "meeting": "BMES 2018",
+    "place": "Atlanta, GA",
+    "format": "Poster"
+  },
+  {
+    "year": 2018,
+    "title": "Gait Kinematics and Muscle Activity from Wearable Sensors Associated with Disability in Persons with Multiple Sclerosis",
+    "authors": "Xia K, Adamowicz L, Weed L, Duksta C, Barnhart G, Solomon A, McGinnis RS",
+    "meeting": "BMES 2018",
+    "place": "Atlanta, GA",
+    "format": "Poster"
+  },
+  {
+    "year": 2017,
+    "title": "Validation of GaitAnalysisPro App for 10m Walk Test",
+    "authors": "Weed L, McGinnis RS",
+    "meeting": "BMES 2017",
+    "place": "Phoenix, AZ",
+    "format": "Oral"
+  }
+]

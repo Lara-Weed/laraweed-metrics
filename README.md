@@ -1,9 +1,21 @@
 # laraweed-metrics
 
-Citation and attention numbers for the Publications page on [laraweed.com](https://www.laraweed.com/publications), served as `impact.json` via GitHub Pages.
+Data for the Publications page on [laraweed.com](https://www.laraweed.com/publications), served via GitHub Pages:
 
-A weekly job on Lara Weed's Mac refreshes them from her public Google Scholar profile and Altmetric, and commits only when something changed. The page falls back to built-in numbers if this file can't be reached.
+- `impact.json` holds the citation and attention numbers.
+- `conferences.json` holds the conference presentations list.
+
+Both blocks on the page fall back to a built-in copy if they can't reach these files.
+
+A weekly job on Lara Weed's Mac refreshes the numbers from her public Google Scholar profile and Altmetric, and commits only when something changed.
 
 - `publish.sh` is the weekly job, run Mondays at 9:00 by `~/Library/LaunchAgents/com.laraweed.metrics.plist`. It logs to `~/Library/Logs/laraweed-metrics.log`.
 - Each run, `zotero_papers.py` reads the paper list from Zotero My Publications, the library behind the website's Publications page, so new papers are picked up on their own.
 - It works from `job/`, a local copy of the scripts kept outside OneDrive, which macOS doesn't let background jobs read. `sync_job.sh` refreshes that copy when the scripts change.
+
+## Adding a conference presentation
+
+Copy an entry in `conferences.json`, paste it first in the list and edit it. The website sorts the list by year. `format` is `"Oral"`, `"Poster"` or `""`. Lara's name is bolded wherever an author starts with `Weed L`.
+
+- **On github.com:** edit the file there and commit. It's live in about a minute, and the weekly job pulls the change.
+- **On the Mac:** edit `~/laraweed-metrics/conferences.json`. Then run `~/laraweed-metrics/publish.sh` to publish it now, or let Monday's job do it. Either way `check_conferences.py` checks the file first and holds back an edit that would break the list.
