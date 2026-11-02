@@ -28,3 +28,9 @@ Add it to a group's `stories` in `news.json`, with `outlet`, `title`, `date` (`"
 Publish it the same two ways as a conference. `check_news.py` checks the file first.
 
 Each Monday, `news_watch.py` compares Altmetric's news mentions of the papers with the ones it has seen (`job/news-seen.json`). When a well-known English-language outlet covers a paper, or a paper gets its first story, it lists the story in the log and sends a Mac notification. It never changes `news.json`.
+
+## Profiles and features from Google Alerts
+
+`news_watch.py` also reads the RSS feed of Lara's "Lara Weed" Google Alert. Its address lives in `~/.config/presence-tracker/news-alert.json`, outside this public repo. A new story goes straight into the Features group of `news.json`, newest first, when it names Lara Weed, is in English, and comes from a Stanford news site or a well-known outlet (the `STANFORD_NEWS` and `PRESS` lists in the script). Profile and directory pages don't count. Everything else is only listed in the log. When a story is added, the weekly job publishes it and sends a Mac notification; to undo one, delete it from `news.json`.
+
+To see what the feed would add without changing anything: `python3 news_watch.py --no-notify --dry-run`
