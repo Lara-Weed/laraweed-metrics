@@ -1,6 +1,7 @@
 #!/bin/bash
 # Copy what the weekly job needs out of the OneDrive folder, which background jobs aren't allowed to read.
-# Run this (or ask Claude to) after adding papers to the tracker or changing the scripts.
+# Run this (or ask Claude to) after changing refresh_metrics.py or build_pub_stats.py. New papers need nothing:
+# the weekly job reads them from Zotero My Publications.
 set -euo pipefail
 FOLDER="/Users/lara/Library/CloudStorage/OneDrive-Stanford/Scientific Visibility"
 JOB="$HOME/laraweed-metrics/job"
