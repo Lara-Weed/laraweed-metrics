@@ -4,7 +4,8 @@
   "altmetricUrl": "https://www.altmetric.com/explorer/highlights?researcher_id%5B%5D=ur.015772061677.94",
   "papers": 16,
   "papersSince": 2020,
-  "citations": 989,
+  "conferences": 17,
+  "citations": 990,
   "h": 9,
   "i10": 9,
   "news": 1049,
@@ -33,7 +34,7 @@
     },
     {
       "year": 2026,
-      "cites": 338
+      "cites": 339
     }
   ],
   "currentYear": 2026
