@@ -6,6 +6,7 @@ set -euo pipefail
 FOLDER="/Users/lara/Library/CloudStorage/OneDrive-Stanford/Scientific Visibility"
 JOB="$HOME/laraweed-metrics/job"
 mkdir -p "$JOB/brand-assets"
-cp "$FOLDER/refresh_metrics.py" "$FOLDER/tracker-data.js" "$FOLDER/brand-assets/source/build_pub_stats.py" "$JOB/"
-[ -f "$JOB/metrics-data.js" ] || cp "$FOLDER/metrics-data.js" "$JOB/"
+# Since Nov 5, 2026 the tracker and its script live in Upkeep/ and the site's build scripts in Website/.
+cp "$FOLDER/Upkeep/refresh_metrics.py" "$FOLDER/Upkeep/tracker-data.js" "$FOLDER/Website/brand-assets/source/build_pub_stats.py" "$JOB/"
+[ -f "$JOB/metrics-data.js" ] || cp "$FOLDER/Upkeep/metrics-data.js" "$JOB/"
 echo "Synced job files ($(date '+%Y-%m-%d %H:%M'))."
