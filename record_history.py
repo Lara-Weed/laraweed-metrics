@@ -1,9 +1,11 @@
 """Keep a dated record of the numbers each run collects, for Lara's own use (never pushed).
 
-Writes two CSVs in job/ (which .gitignore keeps out of the repo) and copies them to Upkeep/ in her
+Writes these in job/ (which .gitignore keeps out of the repo) and copies them to Upkeep/ in her
 Scientific Visibility folder:
   metrics-history.csv         one row per run date: the overall numbers the website shows, and a few more
   metrics-history-papers.csv  one row per paper per run date: citations and attention for each paper
+  metrics-history.js          both, for the "Numbers over time" chart in presence-tracker.html
+It also copies the run's metrics-data.js to Upkeep/, so the tracker's other panels match the chart.
 A second run on the same day replaces that day's rows. Scholar columns are left blank on a day Scholar
 couldn't be reached, so a stale number isn't recorded as a new one.
 """
@@ -86,15 +88,33 @@ def main():
                        "news_stories": a.get("news", ""), "x_posts": a.get("x", ""),
                        "mendeley_readers": a.get("mendeley", "")})
 
-    for name, fields, rows in (("metrics-history.csv", SUMMARY, [summary]),
-                               ("metrics-history-papers.csv", PAPERS, papers)):
-        path = os.path.join(JOB, name)
-        upsert(path, fields, rows, day)
+    upsert(os.path.join(JOB, "metrics-history.csv"), SUMMARY, [summary], day)
+    upsert(os.path.join(JOB, "metrics-history-papers.csv"), PAPERS, papers, day)
+    history = {"updated": m["fetchedAt"], "summary": read_rows("metrics-history.csv"),
+               "papers": read_rows("metrics-history-papers.csv")}
+    with open(os.path.join(JOB, "metrics-history.js"), "w", encoding="utf-8") as f:
+        f.write("/* Numbers over time, written by record_history.py in ~/laraweed-metrics. */\n"
+                "window.METRICS_HISTORY = " + json.dumps(history, indent=1, ensure_ascii=False) + ";\n")
+    for name in ("metrics-history.csv", "metrics-history-papers.csv", "metrics-history.js", "metrics-data.js"):
         try:
-            shutil.copyfile(path, os.path.join(FOLDER, name))
+            shutil.copyfile(os.path.join(JOB, name), os.path.join(FOLDER, name))
         except OSError as e:
             print(f"History: couldn't copy {name} to Upkeep ({e}); it's in job/.")
     print(f"History: recorded {day} ({len(papers)} papers).")
+
+
+def read_rows(name):
+    """A history CSV as a list of dicts, with numbers as numbers and blanks as null."""
+    def val(v):
+        if v in ("", None):
+            return None
+        try:
+            f = float(v)
+            return int(f) if f.is_integer() else f
+        except ValueError:
+            return v
+    with open(os.path.join(JOB, name), newline="", encoding="utf-8") as f:
+        return [{k: (v if k in ("date", "doi", "title") else val(v)) for k, v in r.items()} for r in csv.DictReader(f)]
 
 
 if __name__ == "__main__":
