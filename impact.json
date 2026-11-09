@@ -1,19 +1,19 @@
 {
-  "asOf": "November 4, 2026",
+  "asOf": "November 9, 2026",
   "scholarUrl": "https://scholar.google.com/citations?user=EVIHrc4AAAAJ&hl=en",
   "altmetricUrl": "https://www.altmetric.com/explorer/highlights?researcher_id%5B%5D=ur.015772061677.94",
   "papers": 16,
   "papersSince": 2020,
   "conferences": 19,
-  "citations": 990,
+  "citations": 1014,
   "h": 9,
   "i10": 9,
-  "news": 1055,
-  "altmetric": 7594,
+  "news": 1057,
+  "altmetric": 7605,
   "attentionPapers": 13,
   "newsByDoi": {
     "10.1016/j.xcrm.2022.100895": {
-      "news": 521,
+      "news": 523,
       "url": "https://www.altmetric.com/details/141048972"
     },
     "10.1073/pnas.2508293122": {
@@ -72,7 +72,7 @@
     },
     {
       "year": 2026,
-      "cites": 340
+      "cites": 356
     }
   ],
   "currentYear": 2026
