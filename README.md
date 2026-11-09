@@ -13,6 +13,7 @@ A weekly job on Lara Weed's Mac refreshes the numbers from her public Google Sch
 - `publish.sh` is the weekly job. `run_weekly.sh` runs it Mondays at 9:00, launched by `~/Library/LaunchAgents/com.laraweed.metrics.plist`. If the Mac is offline then, it runs once the connection is back (checked hourly and on each network change, Monday to Friday). If it fails while online, it retries up to 4 times that week, then sends a Mac notification. Both log to `~/Library/Logs/laraweed-metrics.log`.
 - Each run, `zotero_papers.py` reads the paper list from Zotero My Publications, the library behind the website's Publications page, so new papers are picked up on their own.
 - It works from `job/`, a local copy of the scripts kept outside OneDrive, which macOS doesn't let background jobs read. `sync_job.sh` refreshes that copy when the scripts change.
+- `record_history.py` keeps a dated record of each run's numbers, overall and per paper, in `job/metrics-history.csv` and `job/metrics-history-papers.csv`, and copies them to the Upkeep folder. `job/` is in `.gitignore`, so the record stays on the Mac.
 
 ## Adding a conference presentation
 
