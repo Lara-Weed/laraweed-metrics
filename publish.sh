@@ -1,7 +1,7 @@
 #!/bin/bash
 # Weekly: refresh citation and attention numbers, rebuild impact.json and publish it to GitHub Pages, along with
 # any edits to conferences.json and news.json, and flag new press coverage (news_watch.py).
-# Run by ~/Library/LaunchAgents/com.laraweed.metrics.plist; output goes to ~/Library/Logs/laraweed-metrics.log.
+# Run weekly by run_weekly.sh (via ~/Library/LaunchAgents/com.laraweed.metrics.plist); output goes to ~/Library/Logs/laraweed-metrics.log.
 # Run it by hand to publish a conference or news edit right away.
 # Works from ./job, a copy kept outside OneDrive (which background jobs can't read). The paper list comes from
 # Zotero My Publications each run, so sync_job.sh is only needed when the scripts change.

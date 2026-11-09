@@ -10,7 +10,7 @@ Each block falls back to a built-in copy if it can't reach its file.
 
 A weekly job on Lara Weed's Mac refreshes the numbers from her public Google Scholar profile and Altmetric, and commits only when something changed.
 
-- `publish.sh` is the weekly job, run Mondays at 9:00 by `~/Library/LaunchAgents/com.laraweed.metrics.plist`. It logs to `~/Library/Logs/laraweed-metrics.log`.
+- `publish.sh` is the weekly job. `run_weekly.sh` runs it Mondays at 9:00, launched by `~/Library/LaunchAgents/com.laraweed.metrics.plist`. If the Mac is offline then, it runs once the connection is back (checked hourly and on each network change, Monday to Friday). If it fails while online, it retries up to 4 times that week, then sends a Mac notification. Both log to `~/Library/Logs/laraweed-metrics.log`.
 - Each run, `zotero_papers.py` reads the paper list from Zotero My Publications, the library behind the website's Publications page, so new papers are picked up on their own.
 - It works from `job/`, a local copy of the scripts kept outside OneDrive, which macOS doesn't let background jobs read. `sync_job.sh` refreshes that copy when the scripts change.
 
